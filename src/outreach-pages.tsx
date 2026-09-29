@@ -17,7 +17,7 @@ import {
 } from "./outreach";
 
 const asset = (file: string) => `/assets/outreach/${file}`;
-const email = "magicislandroboticsbrasil@gmail.com";
+const email = "magicislandbrasil@gmail.com";
 const categories: (OutreachCategory | "all")[] = [
   "all",
   "education",

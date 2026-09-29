@@ -34,7 +34,7 @@ import {
 type Language = "pt" | "en";
 type LocalText = { pt: string; en: string };
 const A = "/assets/";
-const EMAIL = "magicislandroboticsbrasil@gmail.com";
+const EMAIL = "magicislandbrasil@gmail.com";
 const YOUTUBE = "https://www.youtube.com/channel/UCAnewK-DV-rgF4bJnpuJH1Q";
 const INSTAGRAM = "https://www.instagram.com/frc5800/";
 const GITHUB = "https://github.com/FRC5800";
