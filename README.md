@@ -1,6 +1,6 @@
 # FRC5800 — Magic Island Robotics
 
-Site institucional responsivo criado a partir do site da equipe no Canva, do PDF de design e do **FRC5800 Outreach Book 2026** fornecidos pela equipe. As fotos, o logotipo e as marcas em `public/assets/` vieram desses materiais.
+Site institucional responsivo criado a partir do site da equipe no Canva, do PDF de design fornecidos pela equipe. As fotos, o logotipo e as marcas em `public/assets/` vieram desses materiais.
 
 ## Executar
 
@@ -20,7 +20,7 @@ Abra `http://127.0.0.1:5173/`. Para gerar a versão de produção, execute `pnpm
 - O arquivo CAD apresenta os quatro links de Onshape fornecidos pela equipe (2024, 2025, offseason 2025 e 2026). A visualização do modelo ocorre no Onshape, porque o serviço bloqueia a incorporação do editor em `iframe`. O acesso depende das permissões de compartilhamento de cada documento.
 - Formulário de contato que prepara uma mensagem no aplicativo de e-mail do visitante. Não há servidor de envio ou armazenamento de mensagens.
 
-Os dados das temporadas e marcos históricos foram conferidos no [perfil oficial da equipe na FIRST](https://frc-events.firstinspires.org/2026/team/5800), no [perfil da equipe no LinkedIn](https://www.linkedin.com/company/magic-island-robotics/) e em [notícia do IFSC](https://www.ifsc.edu.br/web/noticias/w/equipe-de-robotica-embarca-nesta-segunda-para-competicao-mundial-no-canada). Os números de impacto, projetos, seleção e marcas de apoio seguem o Outreach Book 2026, com referências de página nas páginas de projeto. As marcas de patrocinadores são as exibidas no livro, sem afirmar que todas mantêm parceria vigente.
+Os dados das temporadas e marcos históricos foram conferidos no perfil oficial da equipe na FIRST, no perfil da equipe no LinkedIn e em notícias do IFSC. As marcas de patrocinadores são as exibidas no livro, sem afirmar que todas mantêm parceria vigente.
 
 O PDF não traz nomes, temporadas ou fichas técnicas dos três robôs fotografados. Por isso, a galeria mostra as fotos sem atribuir dados específicos a cada robô. O blog reúne links oficiais e do acervo da equipe, sem inventar notícias. Para publicar textos próprios e receber mensagens diretamente no site, será necessário conectar um CMS e um serviço de e-mail.
 

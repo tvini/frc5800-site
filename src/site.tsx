@@ -693,11 +693,6 @@ function Home({ language }: { language: Language }) {
               </span>
             </div>
           </div>
-          <p className="home-impact-source">
-            {language === "pt"
-              ? "Dados do FRC5800 Outreach Book 2026"
-              : "Figures from the FRC5800 Outreach Book 2026"}
-          </p>
           <Link to="/impacto" className="text-link">
             {language === "pt"
               ? "Conheça as histórias por trás dos números"
@@ -1368,8 +1363,8 @@ function Sponsors({ language }: { language: Language }) {
           }
           text={
             language === "pt"
-              ? "Marcas apresentadas no Outreach Book 2026 da equipe."
-              : "Brands featured in the team’s 2026 Outreach Book."
+              ? "Empresas e instituições que apoiam e impulsionam a nossa jornada."
+              : "Companies and institutions that support and empower our journey."
           }
         />
         <div className="sponsor-grid">

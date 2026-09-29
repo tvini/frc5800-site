@@ -26,23 +26,6 @@ const categories: (OutreachCategory | "all")[] = [
   "engineering",
 ];
 
-function SourceNote({
-  language,
-  pages,
-}: {
-  language: Language;
-  pages?: string;
-}) {
-  return (
-    <p className="outreach-source">
-      {language === "pt"
-        ? "Fonte: FRC5800 Outreach Book 2026"
-        : "Source: FRC5800 Outreach Book 2026"}
-      {pages ? ` · ${language === "pt" ? "páginas" : "pages"} ${pages}` : ""}.
-    </p>
-  );
-}
-
 function ContactLink({
   language,
   subject,
@@ -112,8 +95,8 @@ export function OutreachIndex({ language }: { language: Language }) {
         </div>
         <p>
           {language === "pt"
-            ? "O que aprendemos com robôs vira oficina, mentoria, torneio e projeto junto da comunidade. Conheça as iniciativas documentadas em nosso Outreach Book 2026."
-            : "What we learn through robots becomes workshops, mentoring, tournaments and community projects. Explore the initiatives documented in our 2026 Outreach Book."}
+            ? "O que aprendemos com robôs vira oficina, mentoria, torneio e projeto junto da comunidade. Conheça nossas principais iniciativas e projetos."
+            : "What we learn through robots becomes workshops, mentoring, tournaments and community projects. Explore our key initiatives and community projects."}
         </p>
       </section>
       <section
@@ -187,7 +170,6 @@ export function OutreachIndex({ language }: { language: Language }) {
             </Link>
           ))}
         </div>
-        <SourceNote language={language} />
       </section>
       <section className="outreach-lab" id="magic-scouting">
         <div className="page-width outreach-lab-inner">
@@ -289,7 +271,6 @@ export function OutreachDetail({ language }: { language: Language }) {
           </h2>
           <p>{project.story[language]}</p>
           <p>{project.outcome[language]}</p>
-          <SourceNote language={language} pages={project.pages} />
         </div>
       </section>
       {project.slug === "torneios-educacionais" ? (
@@ -362,7 +343,6 @@ export function OutreachDetail({ language }: { language: Language }) {
               </div>
             </article>
           </div>
-          <SourceNote language={language} pages="12–13" />
         </section>
       ) : null}
       <section className="outreach-detail-results">
@@ -459,7 +439,7 @@ export function ImpactPage({ language }: { language: Language }) {
       <section className="impact-hero">
         <div className="page-width impact-hero-grid">
           <div>
-            <span className="overline">FRC5800 / OUTREACH BOOK 2026</span>
+            <span className="overline">{language === "pt" ? "FRC5800 / IMPACTO" : "FRC5800 / IMPACT"}</span>
             <h1>
               {language === "pt" ? (
                 <>
@@ -547,7 +527,6 @@ export function ImpactPage({ language }: { language: Language }) {
             </Link>
           ))}
         </div>
-        <SourceNote language={language} />
       </section>
       <section className="impact-school-band">
         <div className="page-width impact-school-inner">
@@ -649,7 +628,6 @@ export function ImpactPage({ language }: { language: Language }) {
               <ArrowUpRight size={18} />
             </Link>
           </div>
-          <SourceNote language={language} pages="03–24" />
         </div>
       </section>
     </main>
@@ -663,8 +641,8 @@ const faq = [
       en: "Do I need to know how to code or build robots?",
     },
     a: {
-      pt: "O processo apresentado no Outreach Book valoriza diferentes habilidades. Engenharia, comunicação, estratégia e impacto social fazem parte da equipe. Para os critérios atuais de seleção, fale diretamente com a 5800.",
-      en: "The selection process described in the Outreach Book values different skills. Engineering, communication, strategy and community impact all matter. Contact the 5800 for current selection criteria.",
+      pt: "O processo seletivo da equipe valoriza diferentes habilidades. Engenharia, comunicação, estratégia e impacto social fazem parte da equipe. Para os critérios atuais de seleção, fale diretamente com a 5800.",
+      en: "The team's selection process values different skills. Engineering, communication, strategy and community impact all matter. Contact the 5800 for current selection criteria.",
     },
   },
   {
@@ -750,15 +728,15 @@ export function JoinPage({ language }: { language: Language }) {
           </h2>
           <p>
             {language === "pt"
-              ? "O Outreach Book descreve um processo seletivo prático, com desafios colaborativos que se parecem com a vida real da equipe. O formato e as datas da próxima edição devem ser confirmados com a 5800."
-              : "The Outreach Book describes a hands-on selection process with collaborative challenges inspired by real team life. Confirm the next edition's format and dates with the 5800."}
+              ? "A 5800 realiza um processo seletivo prático, com desafios colaborativos que se parecem com a vida real da equipe. O formato e as datas da próxima edição devem ser confirmados com a 5800."
+              : "The 5800 runs a hands-on selection process with collaborative challenges inspired by real team life. Confirm the next edition's format and dates with the 5800."}
           </p>
           <span className="join-process-stat">
             ~80{" "}
             <small>
               {language === "pt"
-                ? "candidatos por ano, em média no livro"
-                : "applicants per year on average in the book"}
+                ? "candidatos por ano, em média"
+                : "applicants per year on average"}
             </small>
           </span>
         </div>
@@ -834,7 +812,6 @@ export function JoinPage({ language }: { language: Language }) {
             : "WE'D LOVE TO HEAR FROM YOU."}
         </h2>
         <ContactLink language={language} subject="Contato pelo site FRC5800" />
-        <SourceNote language={language} pages="18" />
       </section>
     </main>
   );
